@@ -35,6 +35,6 @@ CARTCLIN_Project_Package/
 ├── requirements.txt              # Minimal dependencies
 └── README.md                     # Project documentation
 
-**Installation**
+## **Installation**
 
 Clone the repo or extract the CARTCLIN_Project_Package.zip into a local folder.

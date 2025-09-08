@@ -1,0 +1,15 @@
+seed: 1337
+n_per_scenario: 60
+phi_tokens:
+  - "@@NAME@@"
+  - "@@DOB@@"
+  - "@@MRN@@"
+  - "@@ADDRESS@@"
+  - "@@PHONE@@"
+  - "@@EMAIL@@"
+trial_balancing: true     # equal trials per surface A–D
+defence_stack: [prompt_hardening, rsl_rag, tool_mediation, output_verification]
+notes: |
+  Synthetic, researcher-generated dataset. No real PHI or restricted data.
+  Suitable for sharing on GitHub and dissertation submission.
+generated_utc: 2025-09-08T13:29:15.967461Z

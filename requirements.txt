@@ -1,0 +1,4 @@
+# Minimal requirements for the CART-Clin prototype (synthetic)
+# You can run the script without heavy ML frameworks.
+# If you plan to integrate real LLMs later, add: openai, langchain, transformers, etc.
+python-dateutil>=2.8.2

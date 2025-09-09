@@ -1,0 +1,51 @@
+2025-09-08 17:52:39,221 - INFO - Running baseline evaluation...
+2025-09-08 17:52:39,222 - INFO - Using existing dataset: cartclin_synth_dataset.jsonl
+2025-09-08 17:52:39,223 - INFO - Starting baseline evaluation with 200 trials
+2025-09-08 17:52:40,808 - INFO - Completed 10/200 trials
+2025-09-08 17:52:42,883 - INFO - Completed 20/200 trials
+2025-09-08 17:52:44,704 - INFO - Completed 30/200 trials
+2025-09-08 17:52:46,663 - INFO - Completed 40/200 trials
+2025-09-08 17:52:48,621 - INFO - Completed 50/200 trials
+2025-09-08 17:52:50,714 - INFO - Completed 60/200 trials
+2025-09-08 17:52:52,776 - INFO - Completed 70/200 trials
+2025-09-08 17:52:54,854 - INFO - Completed 80/200 trials
+2025-09-08 17:52:56,771 - INFO - Completed 90/200 trials
+2025-09-08 17:52:58,933 - INFO - Completed 100/200 trials
+2025-09-08 17:53:00,900 - INFO - Completed 110/200 trials
+2025-09-08 17:53:03,171 - INFO - Completed 120/200 trials
+2025-09-08 17:53:04,948 - INFO - Completed 130/200 trials
+2025-09-08 17:53:06,941 - INFO - Completed 140/200 trials
+2025-09-08 17:53:09,009 - INFO - Completed 150/200 trials
+2025-09-08 17:53:11,052 - INFO - Completed 160/200 trials
+2025-09-08 17:53:12,938 - INFO - Completed 170/200 trials
+2025-09-08 17:53:15,092 - INFO - Completed 180/200 trials
+2025-09-08 17:53:17,410 - INFO - Completed 190/200 trials
+2025-09-08 17:53:19,755 - INFO - Completed 200/200 trials
+2025-09-08 17:53:19,788 - INFO - Results saved to results\cart_clin_results_baseline_20250908_175319.json
+2025-09-08 17:53:19,788 - INFO - Metrics saved to results\cart_clin_metrics_baseline_20250908_175319.json
+2025-09-08 17:53:19,788 - INFO - Running defended evaluation...
+2025-09-08 17:53:19,789 - INFO - Using existing dataset: cartclin_synth_dataset.jsonl
+2025-09-08 17:53:19,790 - INFO - Starting defended evaluation with 200 trials
+2025-09-08 17:53:22,070 - INFO - Completed 10/200 trials
+2025-09-08 17:53:23,897 - INFO - Completed 20/200 trials
+2025-09-08 17:53:25,815 - INFO - Completed 30/200 trials
+2025-09-08 17:53:27,759 - INFO - Completed 40/200 trials
+2025-09-08 17:53:29,743 - INFO - Completed 50/200 trials
+2025-09-08 17:53:31,643 - INFO - Completed 60/200 trials
+2025-09-08 17:53:33,908 - INFO - Completed 70/200 trials
+2025-09-08 17:53:35,567 - INFO - Completed 80/200 trials
+2025-09-08 17:53:37,776 - INFO - Completed 90/200 trials
+2025-09-08 17:53:39,616 - INFO - Completed 100/200 trials
+2025-09-08 17:53:41,287 - INFO - Completed 110/200 trials
+2025-09-08 17:53:43,126 - INFO - Completed 120/200 trials
+2025-09-08 17:53:45,237 - INFO - Completed 130/200 trials
+2025-09-08 17:53:47,183 - INFO - Completed 140/200 trials
+2025-09-08 17:53:49,202 - INFO - Completed 150/200 trials
+2025-09-08 17:53:51,542 - INFO - Completed 160/200 trials
+2025-09-08 17:53:53,600 - INFO - Completed 170/200 trials
+2025-09-08 17:53:55,854 - INFO - Completed 180/200 trials
+2025-09-08 17:53:57,613 - INFO - Completed 190/200 trials
+2025-09-08 17:53:59,289 - INFO - Completed 200/200 trials
+2025-09-08 17:53:59,301 - INFO - Results saved to results\cart_clin_results_defended_20250908_175359.json
+2025-09-08 17:53:59,301 - INFO - Metrics saved to results\cart_clin_metrics_defended_20250908_175359.json
+2025-09-08 17:53:59,303 - INFO - Evaluation completed successfully

@@ -1,4 +1,26 @@
-# Minimal requirements for the CART-Clin prototype (synthetic)
-# You can run the script without heavy ML frameworks.
-# If you plan to integrate real LLMs later, add: openai, langchain, transformers, etc.
-python-dateutil>=2.8.2
+# CART-Clin Requirements
+# Context-Aware Red-Teaming Framework for Clinical LLMs
+
+# Core Dependencies
+numpy>=1.21.0
+pyyaml>=6.0
+scipy>=1.7.0
+
+# Data Processing
+pandas>=1.3.0
+jsonlines>=3.1.0
+
+# Optional Visualization (uncomment if needed)
+# matplotlib>=3.5.0
+# seaborn>=0.11.0
+# plotly>=5.0.0
+
+# Development and Testing (optional)
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+# black>=22.0.0
+# flake8>=5.0.0
+
+# Documentation (optional)
+# sphinx>=5.0.0
+# sphinx-rtd-theme>=1.0.0

@@ -1,0 +1,13 @@
+{
+  "ASR": 0.0,
+  "PHIL": 0.0,
+  "CVR": 0.0,
+  "avg_latency": 0.197,
+  "median_latency": 0.1944,
+  "avg_confidence": 1.0,
+  "total_trials": 200,
+  "ASR_A": 0.0,
+  "ASR_B": 0.0,
+  "ASR_C": 0.0,
+  "ASR_D": 0.0
+}

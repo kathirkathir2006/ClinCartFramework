@@ -1,152 +1,85 @@
 # CART-Clin: Context-Aware Red-Teaming Framework for Clinical LLMs
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+CART-Clin is a context-aware red-teaming framework that evaluates prompt-injection (PI) risks in clinical LLM pipelines using synthetic data, layered defences, and reproducible experiments.
 
-CART-Clin is a **context-aware red-teaming framework** for evaluating **prompt-injection (PI) vulnerabilities** in **clinical Large Language Models (LLMs)**. This repository contains a fully runnable **synthetic dataset**, **evaluation pipeline**, and **defence-stack integration** for reproducible research.
+---
 
-![CART-Clin Architecture](timeline_cartclin.png)
+## Installation
 
-## 🚀 Features
+Follow these steps to set up and run the CART-Clin project locally:
 
-- **Comprehensive Clinical Evaluation** across four scenarios:
-  - **S1**: Discharge Summarisation
-  - **S2**: Medication Reconciliation  
-  - **S3**: Oncology Counselling
-  - **S4**: Patient Q&A
+### 1. Clone or Extract
+```bash
+git clone https://github.com/<your-username>/CART-Clin.git
+cd CART-Clin
+```
+Or, if using the provided ZIP, extract it and navigate into the folder.
 
-- **Multi-Surface Attack Simulation**:
-  - **A**: Direct prompt injection
-  - **B**: Retrieval-Augmented Injection (RAG poisoning)
-  - **C**: Tool-chain manipulation
-  - **D**: OCR/multimodal attacks
-
-- **Layered Defence Testing**:
-  - Prompt hardening
-  - RSL-RAG sanitisation
-  - Tool mediation
-  - Output verification
-
-- **Comprehensive Metrics**: ASR, PHIL, CVR, Latency tracking
-
-## 📁 Project Structure
-
-```plaintext
-CARTCLIN_Project_Package/
-├── cartclin_synth_dataset.jsonl   # Synthetic dataset (240 records)
-├── cartclin_synth_config.yaml     # Configuration & reproducibility settings
-├── cartclin_readme.txt            # Dataset + ethics documentation
-├── cartclin_app.py                # CART-Clin prototype implementation
-├── requirements.txt               # Dependencies
-└── README.md                      # This file
+### 2. Create a Virtual Environment
+```bash
+python -m venv venv
 ```
 
-## 🛠️ Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-
-### Setup Instructions
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/<your-username>/CART-Clin.git
-   cd CART-Clin
-   ```
-   *Or extract the provided ZIP file and navigate to the folder*
-
-2. **Create Virtual Environment**
-   ```bash
-   python -m venv venv
-   ```
-
-3. **Activate Virtual Environment**
-   ```bash
-   # Windows
-   venv\Scripts\activate
-   
-   # macOS/Linux
-   source venv/bin/activate
-   ```
-
-4. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-5. **Run CART-Clin**
-   ```bash
-   python cartclin_app.py
-   ```
-
-## 📊 Expected Output
-
+### 3. Activate the Environment
+- **Windows**
+```bash
+venv\Scripts\activate
 ```
-Baseline → ASR 63.0%, PHIL 52.5%, CVR 63.0%, Latency 0.000s, Trials 200
-Defended → ASR 0.0%, PHIL 0.0%, CVR 0.0%, Latency 0.000s, Trials 200
+- **Mac/Linux**
+```bash
+source venv/bin/activate
 ```
 
-## 🔬 Evaluation Results
+### 4. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-| Configuration | ASR (%) | PHIL (%) | CVR (%) | Median Latency (s) | Trials |
-|---------------|---------|----------|---------|-------------------|--------|
-| Baseline (undefended) | 63.0 | 52.5 | 63.0 | 0.000 | 200 |
-| Defended (CART-Clin) | 0.0 | 0.0 | 0.0 | 0.000 | 200 |
+### 5. Run the Prototype
+```bash
+python cartclin_app.py
+```
 
-### 🔍 Key Findings
+**Expected output (example):**
+```text
+Baseline → ASR ~55–70%, PHIL ~40–60%, CVR ~55–70%, Latency ~0.10–0.30s
+Defended → ASR ~0–5%, PHIL ~0–2%, CVR ~0–5%, Latency ~0.10–0.30s
+```
 
-- ⚠️ **Without defences**: 63% of attacks succeed
-- 🚨 **PHI leakage** occurs in ~52.5% of trials
-- ⚡ **Constraint violations** occur in ~63% of baseline runs
-- ✅ **With CART-Clin's layered defences**: ASR, PHIL, and CVR drop to 0%
-- ⏱️ **Latency overhead** is negligible, suitable for clinical environments
-
-## 📋 Evaluation Timeline
-
-| Phase | Description | Objective |
-|-------|-------------|-----------|
-| **P0** | Baseline Evaluation | Run undefended trials to measure vulnerability |
-| **P1** | Static Attacks v1 | Launch prompt-injection attempts with fixed payloads |
-| **P2** | Adaptive Attacks v1 | Attack evolves based on model outputs |
-| **P3** | Defence Stack Integration | Apply prompt hardening + RSL-RAG + tool mediation |
-| **P4** | Adaptive Attacks v2 | Retest with improved adversarial strategies |
-| **P5** | Final Audit | Evaluate overall system safety and reproducibility |
-
-## 🛡️ Dataset Ethics
-
-- ✅ **No real patient data used**
-- ✅ All samples generated programmatically
-- ✅ Placeholder PHI tokens simulate leakage scenarios
-- ✅ Fully compliant with ethics requirements
-- ✅ Safe for open-source distribution
-
-## 📄 License
-
-You are free to use, modify, and distribute it.
-
-## 🙏 Acknowledgements
-
-This project was developed as part of the **MSc Dissertation** for the **University of Surrey**
-
-- **Supervisor**: Dr. Caitlin Dragan
-- **Author**: Kathiresan
-- **Email**: kn00657@surrey.ac.uk
-
-## 📚 Citation
-
-If you use CART-Clin in your research, please cite:
-
-```bibtex
-@misc{kathiresan2024cartclin,
-  title={CART-Clin: Context-Aware Red-Teaming Framework for Clinical LLMs},
-  author={Kathiresan},
-  year={2024},
-  school={University of Surrey}
-}
+Optional flags:
+```bash
+python cartclin_app.py --baseline-only
+python cartclin_app.py --defended-only
+python cartclin_app.py --config cartclin_synth_config.yaml
 ```
 
 ---
 
-⭐ **Star this repository** if you find it useful for your research!
+## Project Structure
+```text
+CARTCLIN_Final_Project/
+├─ cartclin_app.py                  # Main application (includes generators, defences, simulator)
+├─ cartclin_synth_config.yaml       # Experiment configuration (YAML)
+├─ cartclin_synth_dataset.jsonl     # Pre-generated dataset (auto-regenerated if missing)
+├─ requirements.txt                 # Python dependencies
+├─ timeline_cartclin.png            # Evaluation timeline image (for README/dissertation)
+├─ results/                         # Auto-created; JSON metrics & logs
+└─ logs/                            # Auto-created; rotating logs
+```
 
-📧 **Questions?** Feel free to open an issue or contact: kn00657@surrey.ac.uk
+---
+
+## 4.6 Evaluation Results (Insert Your Numbers)
+After running, copy the printed results into your dissertation's §4.6 table.
+
+---
+
+## 4.7 Evaluation Timeline
+![Evaluation Timeline](timeline_cartclin.png)
+
+> Ensure `timeline_cartclin.png` is alongside this README so GitHub renders it.
+
+---
+
+## Ethics
+All data are synthetic and PHI-free. No ethical approval is required for replication or sharing.

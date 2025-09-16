@@ -12,19 +12,21 @@ The framework implements clinical data cartography methods, supporting:
 
 ## 📂 Repository Structure
 
-├── logs/ # Run logs
-├── results/ # Output results (images, figures, tables)
-├── cart_clin_final.py # Main implementation
-├── cartclin_app_old_works.py # Previous version (archived)
-├── cartclin_readme.txt # Original notes
-├── cartclin_synth_config.yaml# Synthetic data configuration
-├── cartclin_synth_dataset.jsonl # Example synthetic dataset
-├── config.json # General configuration
-├── requirements.txt # Python dependencies
-├── run_bat.bat # Batch script for running
-├── setup_bat.bat # Batch setup script
-├── README.md # This file
-└── (PNG figures) # Visual outputs
+```plaintext
+├── logs/                         # Run logs
+├── results/                      # Output results (images, figures, tables)
+├── cart_clin_final.py             # Main implementation
+├── cartclin_app_old_works.py      # Previous version (archived)
+├── cartclin_readme.txt            # Original notes
+├── cartclin_synth_config.yaml     # Synthetic data configuration
+├── cartclin_synth_dataset.jsonl   # Example synthetic dataset
+├── config.json                    # General configuration
+├── requirements.txt               # Python dependencies
+├── run_bat.bat                    # Batch script for running
+├── setup_bat.bat                  # Batch setup script
+├── README.md                      # This file
+├── file1.png … file4.png          # Experimental result figures
+└── timeline_cartclin.png          # Project timeline
 
 
 ---

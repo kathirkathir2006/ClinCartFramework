@@ -40,6 +40,7 @@ pip install -r requirements.txt
 python cartclin_app.py
 
 ## Select which model to run
+![Demo](file1.png)
 <img src="https://github.com/kathirkathir2006/ClinCartFramework/blob/main/file1.png?raw=true" width="715">
 
 ## Choose evaluation mode

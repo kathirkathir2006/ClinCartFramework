@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ### 5. Run the Prototype
 ```bash
 python cartclin_app.py
-
+ 
 ## Select which model to run
 ![Demo](https://raw.githubusercontent.com/kathirkathir2006/ClinCartFramework/main/file1.png)
 

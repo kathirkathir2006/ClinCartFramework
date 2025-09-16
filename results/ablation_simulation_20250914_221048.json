@@ -1,0 +1,357 @@
+{
+  "no_defense": {
+    "metrics": {
+      "ASR": 73.4,
+      "ASR_CI": [
+        70.2,
+        76.3
+      ],
+      "PHIL": 73.4,
+      "PHIL_CI": [
+        70.2,
+        76.3
+      ],
+      "CVR": 4.4,
+      "CVR_CI": [
+        3.2,
+        6.0
+      ],
+      "avg_latency": 0.204,
+      "total_trials": 800,
+      "ASR_A": 87.5,
+      "ASR_CI_A": [
+        82.2,
+        91.4
+      ],
+      "ASR_B": 66.5,
+      "ASR_CI_B": [
+        59.7,
+        72.7
+      ],
+      "ASR_C": 57.0,
+      "ASR_CI_C": [
+        50.1,
+        63.7
+      ],
+      "ASR_D": 82.5,
+      "ASR_CI_D": [
+        76.6,
+        87.1
+      ]
+    },
+    "layers": []
+  },
+  "prompt_only": {
+    "metrics": {
+      "ASR": 19.0,
+      "ASR_CI": [
+        16.4,
+        21.9
+      ],
+      "PHIL": 19.0,
+      "PHIL_CI": [
+        16.4,
+        21.9
+      ],
+      "CVR": 1.6,
+      "CVR_CI": [
+        1.0,
+        2.8
+      ],
+      "avg_latency": 0.203,
+      "total_trials": 800,
+      "ASR_A": 6.5,
+      "ASR_CI_A": [
+        3.8,
+        10.8
+      ],
+      "ASR_B": 21.0,
+      "ASR_CI_B": [
+        15.9,
+        27.2
+      ],
+      "ASR_C": 16.5,
+      "ASR_CI_C": [
+        12.0,
+        22.3
+      ],
+      "ASR_D": 32.0,
+      "ASR_CI_D": [
+        25.9,
+        38.8
+      ]
+    },
+    "layers": [
+      "prompt_filter"
+    ]
+  },
+  "context_only": {
+    "metrics": {
+      "ASR": 26.9,
+      "ASR_CI": [
+        23.9,
+        30.1
+      ],
+      "PHIL": 26.9,
+      "PHIL_CI": [
+        23.9,
+        30.1
+      ],
+      "CVR": 1.4,
+      "CVR_CI": [
+        0.8,
+        2.4
+      ],
+      "avg_latency": 0.204,
+      "total_trials": 800,
+      "ASR_A": 36.5,
+      "ASR_CI_A": [
+        30.1,
+        43.4
+      ],
+      "ASR_B": 21.5,
+      "ASR_CI_B": [
+        16.4,
+        27.7
+      ],
+      "ASR_C": 20.0,
+      "ASR_CI_C": [
+        15.0,
+        26.1
+      ],
+      "ASR_D": 29.5,
+      "ASR_CI_D": [
+        23.6,
+        36.2
+      ]
+    },
+    "layers": [
+      "context_sanitizer"
+    ]
+  },
+  "output_only": {
+    "metrics": {
+      "ASR": 0.0,
+      "ASR_CI": [
+        0.0,
+        0.5
+      ],
+      "PHIL": 0.0,
+      "PHIL_CI": [
+        0.0,
+        0.5
+      ],
+      "CVR": 0.0,
+      "CVR_CI": [
+        0.0,
+        0.5
+      ],
+      "avg_latency": 0.204,
+      "total_trials": 800,
+      "ASR_A": 0.0,
+      "ASR_CI_A": [
+        0.0,
+        1.9
+      ],
+      "ASR_B": 0.0,
+      "ASR_CI_B": [
+        0.0,
+        1.9
+      ],
+      "ASR_C": 0.0,
+      "ASR_CI_C": [
+        0.0,
+        1.9
+      ],
+      "ASR_D": 0.0,
+      "ASR_CI_D": [
+        0.0,
+        1.9
+      ]
+    },
+    "layers": [
+      "output_validator"
+    ]
+  },
+  "prompt_context": {
+    "metrics": {
+      "ASR": 19.0,
+      "ASR_CI": [
+        16.4,
+        21.9
+      ],
+      "PHIL": 19.0,
+      "PHIL_CI": [
+        16.4,
+        21.9
+      ],
+      "CVR": 1.6,
+      "CVR_CI": [
+        1.0,
+        2.8
+      ],
+      "avg_latency": 0.203,
+      "total_trials": 800,
+      "ASR_A": 6.5,
+      "ASR_CI_A": [
+        3.8,
+        10.8
+      ],
+      "ASR_B": 21.0,
+      "ASR_CI_B": [
+        15.9,
+        27.2
+      ],
+      "ASR_C": 16.5,
+      "ASR_CI_C": [
+        12.0,
+        22.3
+      ],
+      "ASR_D": 32.0,
+      "ASR_CI_D": [
+        25.9,
+        38.8
+      ]
+    },
+    "layers": [
+      "prompt_filter",
+      "context_sanitizer"
+    ]
+  },
+  "prompt_output": {
+    "metrics": {
+      "ASR": 0.0,
+      "ASR_CI": [
+        0.0,
+        0.5
+      ],
+      "PHIL": 0.0,
+      "PHIL_CI": [
+        0.0,
+        0.5
+      ],
+      "CVR": 0.0,
+      "CVR_CI": [
+        0.0,
+        0.5
+      ],
+      "avg_latency": 0.203,
+      "total_trials": 800,
+      "ASR_A": 0.0,
+      "ASR_CI_A": [
+        0.0,
+        1.9
+      ],
+      "ASR_B": 0.0,
+      "ASR_CI_B": [
+        0.0,
+        1.9
+      ],
+      "ASR_C": 0.0,
+      "ASR_CI_C": [
+        0.0,
+        1.9
+      ],
+      "ASR_D": 0.0,
+      "ASR_CI_D": [
+        0.0,
+        1.9
+      ]
+    },
+    "layers": [
+      "prompt_filter",
+      "output_validator"
+    ]
+  },
+  "context_output": {
+    "metrics": {
+      "ASR": 0.0,
+      "ASR_CI": [
+        0.0,
+        0.5
+      ],
+      "PHIL": 0.0,
+      "PHIL_CI": [
+        0.0,
+        0.5
+      ],
+      "CVR": 0.0,
+      "CVR_CI": [
+        0.0,
+        0.5
+      ],
+      "avg_latency": 0.205,
+      "total_trials": 800,
+      "ASR_A": 0.0,
+      "ASR_CI_A": [
+        0.0,
+        1.9
+      ],
+      "ASR_B": 0.0,
+      "ASR_CI_B": [
+        0.0,
+        1.9
+      ],
+      "ASR_C": 0.0,
+      "ASR_CI_C": [
+        0.0,
+        1.9
+      ],
+      "ASR_D": 0.0,
+      "ASR_CI_D": [
+        0.0,
+        1.9
+      ]
+    },
+    "layers": [
+      "context_sanitizer",
+      "output_validator"
+    ]
+  },
+  "all_layers": {
+    "metrics": {
+      "ASR": 0.0,
+      "ASR_CI": [
+        0.0,
+        0.5
+      ],
+      "PHIL": 0.0,
+      "PHIL_CI": [
+        0.0,
+        0.5
+      ],
+      "CVR": 0.0,
+      "CVR_CI": [
+        0.0,
+        0.5
+      ],
+      "avg_latency": 0.203,
+      "total_trials": 800,
+      "ASR_A": 0.0,
+      "ASR_CI_A": [
+        0.0,
+        1.9
+      ],
+      "ASR_B": 0.0,
+      "ASR_CI_B": [
+        0.0,
+        1.9
+      ],
+      "ASR_C": 0.0,
+      "ASR_CI_C": [
+        0.0,
+        1.9
+      ],
+      "ASR_D": 0.0,
+      "ASR_CI_D": [
+        0.0,
+        1.9
+      ]
+    },
+    "layers": [
+      "prompt_filter",
+      "context_sanitizer",
+      "output_validator"
+    ]
+  }
+}

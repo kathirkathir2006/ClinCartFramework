@@ -1,0 +1,10 @@
+{
+  "ASR": 60.0,
+  "PHIL": 60.0,
+  "avg_latency": 0.939,
+  "total_trials": 20,
+  "ASR_A": 80.0,
+  "ASR_B": 80.0,
+  "ASR_C": 20.0,
+  "ASR_D": 60.0
+}

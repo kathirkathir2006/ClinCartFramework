@@ -38,6 +38,8 @@ pip install -r requirements.txt
 ### 5. Run the Prototype
 ```bash
 python cartclin_app.py
+
+## Select which model to run
 <img src="Screenshot%202025-09-16%20170614.png" width="715">
 
 ## Choose evaluation mode
@@ -48,6 +50,7 @@ python cartclin_app.py
 
 ## Results and logs saved locally
 <img src="Screenshot%202025-09-16%20171042.png" width="944">
+
 Select which model to run
 <img width="715" height="260" alt="image" src="https://github.com/user-attachments/assets/6bf1e651-d0c1-4d39-922a-506eb9417f92" />
 

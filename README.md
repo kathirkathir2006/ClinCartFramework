@@ -1,94 +1,90 @@
-# CART-Clin: Context-Aware Red-Teaming Framework for Clinical LLMs
+# ClinCartFramework – Dissertation Repository (COMM067)
 
-CART-Clin is a context-aware red-teaming framework that evaluates prompt-injection (PI) risks in clinical LLM pipelines using synthetic data, layered defences, and reproducible experiments.
+This repository contains the code, configuration files, datasets, and supporting materials for my MSc dissertation project **ClinCartFramework**.  
+
+The framework implements clinical data cartography methods, supporting:
+- Data preprocessing and synthetic dataset generation.
+- Configurable clinical experiments.
+- Analysis, figures, and results visualization.
+- Automated pipelines for reproducible runs.
 
 ---
 
-## Installation
+## 📂 Repository Structure
 
-Follow these steps to set up and run the CART-Clin project locally:
+├── logs/ # Run logs
+├── results/ # Output results (images, figures, tables)
+├── cart_clin_final.py # Main implementation
+├── cartclin_app_old_works.py # Previous version (archived)
+├── cartclin_readme.txt # Original notes
+├── cartclin_synth_config.yaml# Synthetic data configuration
+├── cartclin_synth_dataset.jsonl # Example synthetic dataset
+├── config.json # General configuration
+├── requirements.txt # Python dependencies
+├── run_bat.bat # Batch script for running
+├── setup_bat.bat # Batch setup script
+├── README.md # This file
+└── (PNG figures) # Visual outputs
 
-### 1. Clone or Extract
-```bash
-git clone https://github.com/<your-username>/CART-Clin.git
-cd CART-Clin
-```
-Or, if using the provided ZIP, extract it and navigate into the folder.
+yaml
+Copy code
 
-### 2. Create a Virtual Environment
-```bash
+---
+
+## ⚙️ Setup Instructions
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/kathirkathir2006/ClinCartFramework.git
+   cd ClinCartFramework
+Create a virtual environment and install dependencies:
+
+bash
+Copy code
 python -m venv venv
-```
-
-### 3. Activate the Environment
-- **Windows**
-```bash
-venv\Scripts\activate
-```
-- **Mac/Linux**
-```bash
-source venv/bin/activate
-```
-
-### 4. Install Dependencies
-```bash
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-```
+(Optional) Configure run settings in config.json or cartclin_synth_config.yaml.
 
-### 5. Run the Prototype
-```bash
-python cartclin_app.py
- 
-## Select which model to run
-![Demo](https://raw.githubusercontent.com/kathirkathir2006/ClinCartFramework/main/file1.png)
+▶️ Usage
+To execute the main pipeline:
 
-<img src="https://github.com/kathirkathir2006/ClinCartFramework/blob/main/file1.png?raw=true" width="715">
+bash
+Copy code
+python cart_clin_final.py
+To run with batch script (Windows):
 
-## Choose evaluation mode
-<img src="https://github.com/user-attachments/assets/Screenshot%202025-09-16%20170639.png" width="454">
+bash
+Copy code
+run_bat.bat
+📊 Results & Figures
+Experimental Runs
+<p align="center"> <img src="file1.png" alt="Run 1" width="48%"> <img src="file2.png" alt="Run 2" width="48%"> </p> <p align="center"> <img src="file3.png" alt="Run 3" width="48%"> <img src="file4.png" alt="Run 4" width="48%"> </p>
+Project Timeline
+<p align="center"> <img src="timeline_cartclin.png" alt="Project timeline" width="80%"> </p>
+🧪 Configuration
+cartclin_synth_config.yaml – Controls synthetic dataset generation.
 
-## Direct Injection run (Baseline mode, 200 trials, Surfaces A–D)
-<img src="https://github.com/user-attachments/assets/Screenshot%202025-09-16%20170745.png" width="512">
+cartclin_synth_dataset.jsonl – Pre-generated dataset.
 
-## Results and logs saved locally
-<img src="https://github.com/user-attachments/assets/Screenshot%202025-09-16%20171042.png" width="944">
+config.json – General runtime configuration.
 
-Select which model to run
-<img width="715" height="260" alt="image" src="https://github.com/user-attachments/assets/6bf1e651-d0c1-4d39-922a-506eb9417f92" />
+Adjust parameters in YAML/JSON files for new experiments.
 
-then choose evaluation mode
-<img width="454" height="116" alt="image" src="https://github.com/user-attachments/assets/141ace5d-7df0-4347-9055-41aa3aa6c0f4" />
+📄 References
+This dissertation follows IEEE citation style.
+A corrected reference list (aligned with in-text citation numbers) is included in the submission files.
 
-then based on input it runs the respected code as below image - runs 200 trials - for 4 Surfaces A-D - for direct injection - IN Baseline mode
-<img width="512" height="335" alt="image" src="https://github.com/user-attachments/assets/6b719454-3470-4545-ade1-f3c314b62326" />
+🙏 Acknowledgements
+Supervised by Prof. Ala Marshan and Dr. Catalin.
 
-Then it runs for RAG Injection , then Tool injection and finnally for OCR Injection
+Conducted as part of COMM067 Dissertation Module.
 
-Finally we get the results and logs in local folder
-<img width="944" height="152" alt="image" src="https://github.com/user-attachments/assets/00cc47c5-9404-41d5-b10c-22b9d389a5a4" />
+Special thanks to the academic staff and peers for feedback and support.
 
-We have shown an example for simulation , likewise you try for other Real time models 
+📌 Notes
+The results (analysis, figures, tables) are unchanged between versions.
 
-```
----
+Only the reference list and in-text citation mapping have been corrected.
 
-## Project Structure
-```text
-CARTCLIN_Final_Project/
-├─ cartclin_app.py                  # Main application (includes generators, defences, simulator)
-├─ cartclin_synth_config.yaml       # Experiment configuration (YAML)
-├─ cartclin_synth_dataset.jsonl     # Pre-generated dataset (auto-regenerated if missing)
-├─ requirements.txt                 # Python dependencies
-├─ timeline_cartclin.png            # Evaluation timeline image (for README/dissertation)
-├─ results/                         # Auto-created; JSON metrics & logs
-└─ logs/                            # Auto-created; rotating logs
-```
-
----
-
-> Ensure `timeline_cartclin.png` is alongside this README so GitHub renders it.
-
----
-
-## Ethics
-All data are synthetic and PHI-free. No ethical approval is required for replication or sharing.
+For details, see the included change log in the submitted files.

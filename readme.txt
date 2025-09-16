@@ -58,10 +58,3 @@ Tests clinical AI systems for security problems like:
    ```
    python cart_clin.py
    ```
-
-## How to Use
-
-1. Run the program
-2. Select a model to test (1-6)
-3. Choose evaluation mode:
-   - Baseline (no
